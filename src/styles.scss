@@ -1,0 +1,174 @@
+button {
+  background-color: #e5322d;
+  color: #fff;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+input {
+  height: 24px;
+  width: 180px;
+  padding: 0px 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+@mixin tables {
+  border:1px solid #e0dddd;
+  border-spacing: unset;
+}
+
+@mixin align_center {
+  display: table;
+  margin: auto;
+}
+
+.text_align_center {
+  text-align: center;
+}
+
+.divClass, .loginPage
+{
+  @include align_center()
+}
+
+.loginPage button
+{
+  width: 78px;
+  height: 26px;
+  margin: auto 30%;
+}
+
+@mixin errors {
+  color: red;
+  font-size: 12px;
+}
+
+.error
+{
+  @include errors();
+  margin-top: -6px;
+  margin-bottom: 4px;
+}
+
+.mrgnDiv
+{
+  margin: 0 40px 0 40px;
+}
+
+.userTable
+{
+  width: 1000px;
+  @include tables()
+}
+
+input:focus-visible
+{
+  outline: none;
+}
+
+th, td
+{
+  padding: 8px;
+}
+
+thead, tr
+{
+  text-align: left;
+}
+
+.formClass
+{
+  width: fit-content;
+  margin: auto;
+}
+
+.tableClass
+{
+  width: 1000px;
+  margin: auto;
+  display: table;
+}
+
+.cnclBtn
+{
+  margin-left: 10px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.cnclBtn:hover
+{
+  background-color: #e8e8e8;
+}
+
+nav
+{
+  background-color: #d8d8d8;
+  padding: 10px;
+}
+
+ul
+{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  li {
+    a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
+
+ul li a:hover
+{
+  color: #e5322d;
+}
+
+.active {
+  color: #e5322d;
+  border-bottom: 2px solid #e5322d;
+  padding-bottom: 8px;
+}
+
+.uname span{
+  font-weight: bold;
+  color: #7455ef;
+}
+
+.actionBtn
+{
+  margin-top: 20px;
+}
+
+.logoutBtn
+{
+  position: absolute;
+  right: 40px;
+  background-color: transparent;
+  color: red;
+  font-size: 16px;
+  border: transparent;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
