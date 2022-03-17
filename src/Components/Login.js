@@ -13,7 +13,6 @@ function Login() {
   const {register, handleSubmit, formState: {errors}} = useForm();
 
   useEffect(()=>{
-    //uname.current.focus()
     if(localStorage.getItem("isLoggedin")) {
       history.push("/std");
     }
