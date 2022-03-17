@@ -19,10 +19,7 @@ function Login() {
   },[])
 
   const onSubmit=data=>{
-    // if((uname.current.value === "mmm" && pwd.current.value === "mmm") ||
-    // (uname.current.value === "nnn" && pwd.current.value === "nnn")) {
-      if((data.userName === "mmm" && data.passWord === "mmm") ||
-    (data.userName === "nnn" && data.passWord === "nnn")) {
+    if(data.userName === "123" && data.passWord === "123") {
       localStorage.setItem("isLoggedin", "true")
       history.push({
         pathname: '/std',
